@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const PROXY_API_ENDPOINT = "/.netlify/functions/fetch-api";
+const PROXY_API_ENDPOINT = "/.netlify/functions/proxy-api";
 
 export const fetchAllCountries = async ()=>{
     try {
