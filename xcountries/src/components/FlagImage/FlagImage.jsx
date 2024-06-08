@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./FlagImage.module.css";
 
 const FlagImage = ({path, alt})=>{
     return (

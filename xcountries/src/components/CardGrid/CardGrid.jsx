@@ -30,13 +30,21 @@ const CardGrid = ()=>{
     return (
         <>
             <Toaster position="bottom-right" reverseOrder={false} />
-            <div className={styles.wrapper}>
+            {countryData.length? (
+                <div className={styles.wrapper}>
                 {
                     countryData.map((country)=>{
                         return <Card country={country}/>
                     })
                 }
             </div>
+            )
+            :loadingState?(
+                <div className={styles.loader}>Loading...</div>
+            )
+            :(<p>No Data Found</p>)
+            }
+            
         </>
 
     )
