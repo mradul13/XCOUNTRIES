@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const PROXY_API_ENDPOINT = "/.netlify/functions/proxy-api";
+const API_ENDPOINT = "https://restcountries.com/v3.1/all";
 
 export const fetchAllCountries = async ()=>{
     try {
-        const response = await axios.get(`${PROXY_API_ENDPOINT}`);
+        const response = await axios.get(`${API_ENDPOINT}`);
         return response.data
     }
     catch(error){

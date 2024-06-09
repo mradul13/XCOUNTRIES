@@ -19,7 +19,6 @@ const CardGrid = ()=>{
         catch(error){
             setLoadingState(false);
             errorHandler(error);
-            
         }
     }
 
